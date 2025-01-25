@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Story Intro</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+            color: yellow;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .fade {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, black);
+        }
+        .intro {
+            position: absolute;
+            width: 80%;
+            top: 100vh;
+            left: 50%;
+            transform: translateX(-50%) rotateX(20deg);
+            font-size: 2em;
+            font-weight: bold;
+            text-align: justify;
+            animation: crawl 20s linear forwards;
+        }
+        @keyframes crawl {
+            from {
+                top: 100vh;
+            }
+            to {
+                top: -200vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade"></div>
+    <div class="intro">
+        <p>In a world of magic and mystery...</p>
+        <p>The year is 1995, and Hogwarts School of Witchcraft and Wizardry is in turmoil.</p>
+        <p>Dark forces are gathering, and whispers of Voldemort's return send chills down the wizarding world.</p>
+        <p>Will you join Dumbledore's Army or remain in the shadows?</p>
+        <p>Your journey begins now...</p>
+    </div>
+</body>
+</html>
